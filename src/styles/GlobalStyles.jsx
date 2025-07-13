@@ -1,22 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`
-  * {
+export const GlobalStyles = createGlobalStyle`
+  body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'Open Sans', sans-serif;
     background: ${({ theme }) => theme.background};
-    transition: all 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+    transition: background 0.4s ease-in-out;
   }
 `;
-
-export default GlobalStyles;
-
